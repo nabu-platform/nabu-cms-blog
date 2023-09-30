@@ -1,0 +1,1 @@
+<structure name="attachment" restrict="created,parentId,size,title,description,uri,external,languageId,ownerId" superType="nabu.cms.attachment.types.model.attachments.NodeAttachment"/>

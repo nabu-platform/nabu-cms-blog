@@ -1,0 +1,1 @@
+A blog is the parent node of blog posts with component type "blog"

@@ -1,0 +1,4 @@
+<structure name="path">
+    <field name="postId" type="java.util.UUID"/>
+    <field name="title" type="java.lang.String"/>
+</structure>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.data.model.DataModelManager" created="2023-09-30T09:05:30.027+02:00" lastModified="2023-09-30T09:31:10.446+02:00" leaf="true" version="8">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.cms.core.types.emodel.core.Node</references>
+    <references>nabu.cms.blog.database.types.blogPost</references>
+</node>

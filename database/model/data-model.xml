@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <x>624</x>
+        <y>245</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.cms.core.types.emodel.core.Node</type>
+        <x>20</x>
+        <y>93</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.cms.blog.database.types.blogPost</type>
+        <x>646</x>
+        <y>495</y>
+    </entries>
+</dataModel>

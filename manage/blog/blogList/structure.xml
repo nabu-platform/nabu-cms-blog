@@ -1,0 +1,4 @@
+<structure name="blogList">
+    <structure definition="nabu.cms.blog.manage.blog.blog" maxOccurs="unbounded" minOccurs="0" name="blogs" restrict="path, slug, componentId, version"/>
+    <structure definition="be.nabu.eai.module.services.crud.Page" minOccurs="0" name="page"/>
+</structure>

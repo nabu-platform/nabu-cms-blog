@@ -1,0 +1,6 @@
+<structure collectionName="blogInstances" duplicate="id, created, modified" name="blogPost" superType="nabu.cms.core.types.emodel.core.Node">
+    <field comment="When should it be published" minOccurs="0" name="published" timezone="UTC" type="java.util.Date"/>
+    <field comment="What do we show in RSS feeds, share blurbs etc" minOccurs="0" name="summary" type="java.lang.String"/>
+    <field comment="Explicitly fill in the name of the author if you want it to appear" identifiable="true" minOccurs="0" name="author" type="java.lang.String"/>
+    <field comment="You can specify the content type, for instance &quot;text/markdown&quot;, &quot;text/html&quot;,..." minOccurs="0" name="contentType" type="java.lang.String"/>
+</structure>

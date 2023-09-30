@@ -1,0 +1,5 @@
+<structure interface="nabu.cms.blog.rest.post.read:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <field minOccurs="0" name="now" type="java.util.Date"/>
+</structure>

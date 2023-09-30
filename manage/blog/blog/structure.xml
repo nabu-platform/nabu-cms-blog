@@ -1,0 +1,1 @@
+<structure name="blog" restrict="path, slug, componentId, version" superType="nabu.cms.core.types.emodel.core.Node"/>

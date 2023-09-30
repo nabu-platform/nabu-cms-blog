@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.cms.blog.crud.blogPost</webFragments>
+    <webFragments>nabu.cms.blog.manage.blog.list</webFragments>
+    <webFragments>nabu.cms.blog.manage.blog.create</webFragments>
+    <webFragments>nabu.cms.blog.manage.blog.listParents</webFragments>
+    <webFragments>nabu.cms.blog.crud.blog</webFragments>
+    <audience>MANAGER</audience>
+</webModule>
