@@ -1,4 +1,3 @@
 <structure name="post" restrict="created,started,stopped,ownerId,verified,enabled,parentId,version,priority,name,path,slug,componentId,anonymized" superType="nabu.cms.blog.database.types.blogPost">
     <field maxOccurs="unbounded" minOccurs="0" name="tags" type="java.lang.String"/>
-    <structure definition="nabu.cms.blog.rest.post.attachment" maxOccurs="unbounded" minOccurs="0" name="attachments" restrict="created,parentId,size,title,description,uri,external,languageId,ownerId"/>
 </structure>

@@ -85,45 +85,9 @@
 			message="Not yet published"
 			whitelist="false" xsi:nil="true"/>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
-			comment="Get any attachments"
-			disabled="false"
-			id="5640e1d6f6a84242979c9c5e0d9af2b0"
-			lineNumber="5">
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="2e32b2c547784f668efbfb02f762639b"
-				serviceId="nabu.cms.attachment.crud.nodeAttachment.services.list"
-				resultName="resultf5736445d7d542be992e83429871ca8d"
-				temporaryMapping="true"
-				x="139"
-				y="92"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="01cd2dd2798e429cb8722c236f58e15a"
-					mask="false"
-					optional="false"
-					fixedValue="false">
-				<from>input/path/postId</from>
-				<to>filter/nodeId[0]</to>
-			</steps>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
-				id="930a4d8109194607bfe869ec578432f8"
-				mask="true"
-				optional="false"
-				fixedValue="false">
-			<from>resultf5736445d7d542be992e83429871ca8d/results</from>
-			<to>output/content/attachments</to>
-		</steps>
-	</steps>
-	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			disabled="false"
 			id="9d10e63d23774da883225d94ef28e8c6"
-			lineNumber="6">
+			lineNumber="5">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"
 				id="0ce3c4e874e048989e3ec4f0d44fb34b"
