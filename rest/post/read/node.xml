@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-09-30T09:12:34.806+02:00" lastModified="2023-09-30T17:27:58.697+02:00" leaf="true" version="18">
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-09-30T09:12:34.806+02:00" lastModified="2023-10-01T08:49:43.467+02:00" leaf="true" version="22">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>java.util.Date</references>
     <references>nabu.utils.Date.now</references>
-    <references>java.lang.String</references>
+    <references>nabu.cms.core.services.context.getGlobalContext</references>
     <references>nabu.cms.core.crud.nodeTag.services.list</references>
-    <references>nabu.cms.blog.rest.post.post</references>
+    <references>nabu.cms.attachment.services.getUrl</references>
     <references>nabu.cms.blog.crud.blogPost.services.get</references>
+    <references>nabu.cms.attachment.crud.nodeAttachment.types.output</references>
+    <references>nabu.cms.core.services.masterdata.entry.get</references>
+    <references>java.lang.String</references>
+    <references>nabu.cms.attachment.crud.nodeAttachment.services.list</references>
+    <references>nabu.cms.blog.rest.post.post</references>
 </node>

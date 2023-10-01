@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <restInterface>
     <method>GET</method>
-    <path>/blog/post/{postId}/{title}</path>
+    <path>/blog/post/{postId}</path>
     <permissionAction>blog.read</permissionAction>
     <permissionContext>=input/path/postId</permissionContext>
     <useServiceContextAsPermissionContext>false</useServiceContextAsPermissionContext>
@@ -10,7 +10,7 @@
     <useGlobalPermissionContext>false</useGlobalPermissionContext>
     <output>nabu.cms.blog.rest.post.post</output>
     <lenient>true</lenient>
-    <webApplicationId>false</webApplicationId>
+    <webApplicationId>true</webApplicationId>
     <geoPosition>false</geoPosition>
     <useAsAuthorizationServiceContext>false</useAsAuthorizationServiceContext>
     <language>true</language>
