@@ -1,0 +1,4 @@
+<structure name="postList">
+    <structure definition="nabu.cms.blog.rest.post.post" maxOccurs="unbounded" minOccurs="0" name="posts" restrict="created,started,stopped,ownerId,verified,enabled,parentId,version,priority,name,path,slug,componentId,anonymized"/>
+    <structure definition="be.nabu.eai.module.services.crud.Page" minOccurs="0" name="page"/>
+</structure>

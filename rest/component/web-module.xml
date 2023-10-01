@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webModule>
     <webFragments>nabu.cms.blog.rest.post.read</webFragments>
+    <webFragments>nabu.cms.blog.rest.post.list</webFragments>
     <audience>CUSTOMER</audience>
 </webModule>
