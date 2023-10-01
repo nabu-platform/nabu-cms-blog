@@ -3,6 +3,7 @@
     <allowHeaderAsQueryParameter>true</allowHeaderAsQueryParameter>
     <broadcastCreate>false</broadcastCreate>
     <broadcastUpdate>false</broadcastUpdate>
+    <changeTracker>nabu.cms.core.providers.misc.changeTracker</changeTracker>
     <coreType>nabu.cms.blog.database.types.blogPost</coreType>
     <createBlacklistFields>anonymized</createBlacklistFields>
     <createBlacklistFields>componentId</createBlacklistFields>
