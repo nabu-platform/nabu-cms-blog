@@ -1,0 +1,5 @@
+<structure interface="nabu.cms.blog.manage.topic.tag.list:api" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="nodeTags" definition="nabu.cms.core.crud.nodeTag.types.output" maxOccurs="unbounded" minOccurs="0" name="tags"/>
+</structure>

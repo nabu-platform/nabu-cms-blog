@@ -1,0 +1,4 @@
+<structure name="listOutput">
+    <structure definition="nabu.cms.blog.services.searchTags.results" maxOccurs="unbounded" minOccurs="0" name="tags"/>
+    <structure definition="be.nabu.eai.module.services.crud.Page" minOccurs="0" name="page"/>
+</structure>

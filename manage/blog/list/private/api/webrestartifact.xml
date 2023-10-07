@@ -4,7 +4,7 @@
     <path>/blog</path>
     <queryParameters>limit, offset, orderBy, q</queryParameters>
     <role>$user</role>
-    <permissionAction>blog.list</permissionAction>
+    <permissionAction>blog.manage</permissionAction>
     <useServiceContextAsPermissionContext>false</useServiceContextAsPermissionContext>
     <useWebApplicationAsPermissionContext>false</useWebApplicationAsPermissionContext>
     <useProjectAsPermissionContext>false</useProjectAsPermissionContext>

@@ -2,5 +2,7 @@
 <webModule>
     <webFragments>nabu.cms.blog.rest.post.read</webFragments>
     <webFragments>nabu.cms.blog.rest.post.list</webFragments>
+    <webFragments>nabu.cms.blog.rest.toc</webFragments>
+    <webFragments>nabu.cms.blog.rest.tag.list</webFragments>
     <audience>CUSTOMER</audience>
 </webModule>

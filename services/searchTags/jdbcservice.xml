@@ -1,0 +1,11 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sql>select 
+	mde.id,
+	mde.name,
+	count(*)
+from ~master_data_entries mde
+	join ~node_tags nt on nt.definition_id = mde.id and mde.owner_id = :blogId
+	join ~nodes n on nt.node_id = n.id and n.component_id = (select id from components where name='blogPost') and n.parent_id = :blogId
+where (:q is null or lower(mde.name) like lower('%' || :q || '%'))
+group by mde.id, mde.name</sql>
+</jdbcService>

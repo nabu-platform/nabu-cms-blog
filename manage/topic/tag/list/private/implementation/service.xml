@@ -1,0 +1,85 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="6c0ac70bf6424e529ecbbd54e41ed350"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="ae5f5946a57b484eb55c80fbf112a49a"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="95eaf0ff31c04c1aa928037d66fe99fd"
+				serviceId="nabu.cms.core.crud.nodeTag.services.list"
+				resultName="result278c38420dde4a68b6b62244fc0f2e59"
+				temporaryMapping="true"
+				x="111"
+				y="87"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="ebb65fb368a146ed882e2192b18c4fbf"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path/blogPostId</from>
+				<to>filter/nodeId[0]</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="54a97f004f07411ab864042a1c4831c2"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result278c38420dde4a68b6b62244fc0f2e59/results</from>
+			<to>tags</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="9fc7ba8940bf4bdbbc72805e0488a8da"
+			label="tags"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="de20555baf6a42969be4149a26bf8a9e"
+				serviceId="nabu.cms.core.crud.masterDataEntry.services.list"
+				resultName="result90d81bba06ff45118eae95b675df7e75"
+				temporaryMapping="true"
+				x="337"
+				y="54"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="7ba20887b59d4aff8221d8c89b760066"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>tags/definitionId</from>
+				<to>filter/id</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="642db10bb01e43c0bda239b7dff9127a"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/query/orderBy</from>
+				<to>orderBy</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="f5a3955bd46a40f8a416248595ef8e0e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result90d81bba06ff45118eae95b675df7e75</from>
+			<to>output/content</to>
+		</steps>
+	</steps>
+</sequence>

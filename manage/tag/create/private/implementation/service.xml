@@ -1,0 +1,58 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="a1980f97539a48958bdf2a59c35774f4"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="912fbaf2c293458597a0400a0acbf815"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="b7d06663388d4ae9874f2139ad68e1bd"
+				serviceId="nabu.cms.core.services.masterdata.entry.get"
+				resultName="resulte39d756409ba48268c37750b46f14086"
+				temporaryMapping="true"
+				x="139"
+				y="31"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="f778b627627049a28442be1aa7820051"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path/blogId</from>
+				<to>ownerId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="3ced77383a5d44389fd2a56206b43ac0"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>blogTag</from>
+				<to>category</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="3006f2320ef742788566af6dced85363"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/content/name</from>
+				<to>name</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="4062458d021649729d8cec2ee1ec65e3"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resulte39d756409ba48268c37750b46f14086/masterDataEntry</from>
+			<to>output/content</to>
+		</steps>
+	</steps>
+</sequence>

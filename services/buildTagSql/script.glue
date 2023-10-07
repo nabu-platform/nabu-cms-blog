@@ -1,0 +1,24 @@
+uuid [] tagIds ?= null
+date publishedBefore ?= null
+
+from = "~nodes n join ~blog_posts bp on n.id = bp.id"
+where = ""
+@return
+be.nabu.libs.types.api.TypedKeyValuePair [] values = series()
+for (tag : tagIds)
+	from = from + "\n\tjoin ~node_tags nt" + $index + " on nt" + $index + ".node_id = n.id"
+	if (where != "")
+		where = where + "\n\tand"
+	where = where + " nt" + $index + ".definition_id = :definitionId" + $index
+	values = merge(values, structure(key: "definitionId" + $index, value: tag, type: "uuid"))
+
+if (publishedBefore != null)
+	if (size(where) > 0)
+		where = where + " and "
+	where = where + "bp.published <= :published"
+	values = merge(values, structure(key: "published", value: publishedBefore, type: "date"))
+
+@return
+string sql = "select * from " + from
+if (size(where) > 0)
+	sql = sql + "\nwhere " + where

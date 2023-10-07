@@ -2,7 +2,7 @@
 <restInterface>
     <method>GET</method>
     <path>/blog/{identifier}/post</path>
-    <queryParameters>limit, offset, orderBy, q</queryParameters>
+    <queryParameters>limit, offset, orderBy, q, tag</queryParameters>
     <permissionAction>blog.list</permissionAction>
     <permissionContext>=input/path/identifier</permissionContext>
     <useServiceContextAsPermissionContext>false</useServiceContextAsPermissionContext>

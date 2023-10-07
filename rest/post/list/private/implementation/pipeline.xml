@@ -5,4 +5,5 @@
     <structure collectionName="nodeAttachments" definition="nabu.cms.attachment.crud.nodeAttachment.types.output" maxOccurs="unbounded" minOccurs="0" name="attachments"/>
     <structure collectionName="nodeTags" definition="nabu.cms.core.crud.nodeTag.types.output" maxOccurs="unbounded" minOccurs="0" name="tags"/>
     <structure collectionName="nodeAttachments" definition="nabu.cms.attachment.crud.nodeAttachment.types.output" minOccurs="0" name="attachment"/>
+    <structure collectionName="masterDataEntries" definition="nabu.cms.core.crud.masterDataEntry.types.output" maxOccurs="unbounded" minOccurs="0" name="tagMasterdata"/>
 </structure>

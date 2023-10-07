@@ -97,7 +97,7 @@
 					mask="false"
 					optional="false"
 					fixedValue="true">
-				<from>blog.list,blog.manage</from>
+				<from>blog.list,blog.manage,blog.read</from>
 				<to>string</to>
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"

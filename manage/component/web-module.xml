@@ -5,5 +5,11 @@
     <webFragments>nabu.cms.blog.manage.blog.create</webFragments>
     <webFragments>nabu.cms.blog.manage.blog.listParents</webFragments>
     <webFragments>nabu.cms.blog.crud.blog</webFragments>
+    <webFragments>nabu.cms.blog.rest.toc</webFragments>
+    <webFragments>nabu.cms.blog.manage.tag.list</webFragments>
+    <webFragments>nabu.cms.blog.manage.tag.create</webFragments>
+    <webFragments>nabu.cms.blog.manage.topic.tag.remove</webFragments>
+    <webFragments>nabu.cms.blog.manage.topic.tag.add</webFragments>
+    <webFragments>nabu.cms.blog.manage.topic.tag.list</webFragments>
     <audience>MANAGER</audience>
 </webModule>

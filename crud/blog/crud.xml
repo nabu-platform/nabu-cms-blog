@@ -54,9 +54,9 @@
         <input>true</input>
         <vary>false</vary>
     </filters>
-    <getPermission>blog.list</getPermission>
+    <getPermission>blog.manage</getPermission>
     <hooks>false</hooks>
-    <listPermission>blog.list</listPermission>
+    <listPermission>blog.manage</listPermission>
     <listRole>$user</listRole>
     <provider>nabu.cms.core.providers.crud.enode.provider</provider>
     <restLimitToUser>true</restLimitToUser>
