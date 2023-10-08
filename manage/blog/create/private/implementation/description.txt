@@ -1,0 +1,4 @@
+In a way the blog permissions can be seen as marker permissions. They should be applied in the correct context of course.
+Especialy when giving to pseudo roles like $guest, they tend to be marker permissions which is why we make them at the blog level itself
+However, this conflicts with the intention to not have marker permissions... but otherwise if you want _a_ public blog (so assign to $guest), all blogs are public?
+Could have a specific boolean for "public" or not and have a different endpoint for those blogs with no permissions?

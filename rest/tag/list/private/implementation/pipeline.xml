@@ -1,4 +1,4 @@
-<structure interface="$self:api" name="pipeline">
+<structure interface="nabu.cms.blog.rest.tag.list:api" name="pipeline">
     <structure name="input"/>
     <structure name="output"/>
     <field name="blogId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>

@@ -1,0 +1,3 @@
+<structure name="sitemapConfiguration">
+    <field comment="The url template to use to build endpoints" name="urlTemplate" type="java.lang.String"/>
+</structure>

@@ -8,36 +8,18 @@
 			lineNumber="2">
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"
-				id="d0f0e71fb73f4c4da03d042a5fd2dd07"
-				serviceId="nabu.cms.core.crud.node.services.list"
-				resultName="result478493661815425f8a07c5f5e80f533c"
+				id="328cb2c89e88420c8e3f4ccc84f47c9f"
+				serviceId="nabu.cms.blog.crud.blog.services.list"
+				resultName="result474ccf9df6b6465a8795e8721e76e7f3"
 				temporaryMapping="true"
-				x="509"
-				y="86"
-				invocationOrder="1"
+				x="172"
+				y="134"
+				invocationOrder="0"
 				asynchronous="false"
 				recache="false">
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="a602ab0970564d93823588cf1e5c2a8b"
-					mask="false"
-					optional="false"
-					fixedValue="false">
-				<from>result27431d6ecc7543d7864f737b140ca0d4/componentId</from>
-				<to>filter/componentId[0]</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="60305afd84d7406ebfb936821de2bf1f"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>true</from>
-				<to>limitToUser</to>
-			</steps>
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="c8df4a8648e040e39855fa9ea13ade2c"
+					id="14ebffbdac3d41b48213734810d9befb"
 					mask="false"
 					optional="false"
 					fixedValue="false">
@@ -46,7 +28,7 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="a2b796a7d5f74f879146ed22b92cea2d"
+					id="a0b3b30866a64a2a9c3c5aa3864c2eae"
 					mask="false"
 					optional="false"
 					fixedValue="false">
@@ -55,7 +37,7 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="e7a388a845554f3c8a78e493b1641fc7"
+					id="afcef1774ee64f6db6fa00c0791b3bdb"
 					mask="false"
 					optional="false"
 					fixedValue="false">
@@ -64,7 +46,7 @@
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 					disabled="false"
-					id="09f3631f86c14646a95ff1186f6f8e79"
+					id="df48161402ff47ff992084c19d2098c0"
 					mask="false"
 					optional="false"
 					fixedValue="false">
@@ -72,56 +54,23 @@
 				<to>filter/q</to>
 			</steps>
 		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="852efda97690479793be335636681157"
-				serviceId="nabu.cms.core.services.component.get"
-				resultName="result27431d6ecc7543d7864f737b140ca0d4"
-				temporaryMapping="true"
-				x="38"
-				y="65"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-					disabled="false"
-					id="9ec4fb9028a64d0e9b94f2653ca84ed7"
-					mask="false"
-					optional="false"
-					fixedValue="true">
-				<from>blog</from>
-				<to>name</to>
-			</steps>
-		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="6e123423d70041b7b3cbe61b456983e0"
-				mask="false"
-				optional="false"
-				fixedValue="false">
-			<from>result478493661815425f8a07c5f5e80f533c/page</from>
-			<to>output/content/page</to>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
-				id="0109956978d74bc3bd8be44ae929f8b6"
+				id="d7d46e19690442ef969bd57284826f80"
 				mask="true"
 				optional="false"
 				fixedValue="false">
-			<from>result478493661815425f8a07c5f5e80f533c/results</from>
+			<from>result474ccf9df6b6465a8795e8721e76e7f3/results</from>
 			<to>output/content/blogs</to>
 		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="cb18805a5a844035a74014e10c9157d2"
-				serviceId="nabu.cms.blog.crud.blog.services.list"
-				resultName="result1754710497694c39959a6426d6ae64ba"
-				temporaryMapping="true"
-				x="265"
-				y="586"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
+				id="16ca396648094a8ca6573a5aaab713fd"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result474ccf9df6b6465a8795e8721e76e7f3/page</from>
+			<to>output/content/page</to>
 		</steps>
 	</steps>
 </sequence>

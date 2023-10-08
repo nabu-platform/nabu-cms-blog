@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2023-09-30T09:41:20.761+02:00" lastModified="2023-09-30T09:42:14.524+02:00" leaf="true" version="4">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2023-09-30T09:41:20.761+02:00" lastModified="2023-10-08T14:20:26.977+02:00" leaf="true" version="5">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
-    <references>nabu.cms.core.types.emodel.core.Node</references>
+    <references>nabu.cms.blog.database.types.blog</references>
 </node>

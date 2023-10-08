@@ -1,4 +1,6 @@
 <structure interface="nabu.cms.blog.manage.blog.create:api" name="pipeline">
     <structure name="input"/>
     <structure name="output"/>
+    <structure collectionName="nodes" definition="nabu.cms.core.crud.node.types.output" name="blog"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="permissions" type="java.lang.String"/>
 </structure>

@@ -68,8 +68,8 @@
 				serviceId="nabu.cms.blog.services.searchTags"
 				resultName="resulta163de0998c74977a198a42bc10257e7"
 				temporaryMapping="true"
-				x="192"
-				y="171"
+				x="433"
+				y="158"
 				invocationOrder="1"
 				asynchronous="false"
 				recache="false">
@@ -117,6 +117,15 @@
 					fixedValue="false">
 				<from>input/query/orderBy</from>
 				<to>orderBy</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e02d4d2dc3774479a1aa75dba8289fbe"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>resultb46bcbd748ba496da5abbaf711faada5/date</from>
+				<to>parameters/publishedBefore</to>
 			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
@@ -214,6 +223,18 @@
 				fixedValue="false">
 			<from>result00edbeec8da44c9cb50cb70406c83118/page</from>
 			<to>output/content/page</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="47fd52bb0f7f404490d2198b088bae49"
+				serviceId="nabu.utils.Date.now"
+				resultName="resultb46bcbd748ba496da5abbaf711faada5"
+				temporaryMapping="true"
+				x="43"
+				y="196"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
 		</steps>
 	</steps>
 </sequence>

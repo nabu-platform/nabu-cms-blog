@@ -17,4 +17,10 @@
         <x>646</x>
         <y>495</y>
     </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.cms.blog.database.types.blog</type>
+        <x>751</x>
+        <y>136</y>
+    </entries>
 </dataModel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-10-08T14:24:39.457+02:00" lastModified="2023-10-08T14:43:08.131+02:00" leaf="true" version="16">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.utils.Date.now</references>
+    <references>nabu.services.glue.Services.evaluate</references>
+    <references>nabu.web.map.specs.listEntries</references>
+    <references>nabu.cms.blog.crud.blog.services.list</references>
+    <references>nabu.cms.blog.crud.blog.types.output</references>
+    <references>nabu.cms.blog.providers.sitemapConfiguration</references>
+    <references>nabu.cms.blog.crud.blogPost.services.list</references>
+    <references>java.lang.Object</references>
+    <references>java.lang.String</references>
+    <references>nabu.protocols.jdbc.pool.Services.connectionForContext</references>
+    <references>nabu.utils.reflection.Node.dependencies</references>
+    <references>nabu.web.map.specs.entry</references>
+    <references>nabu.cms.blog.crud.blogPost.types.output</references>
+</node>

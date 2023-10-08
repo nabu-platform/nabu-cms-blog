@@ -1,0 +1,16 @@
+<structure interface="nabu.web.map.specs.listEntries" name="pipeline">
+    <structure name="input" restrict="properties">
+        <structure definition="nabu.cms.blog.providers.sitemapConfiguration" name="properties"/>
+    </structure>
+    <structure name="output"/>
+    <field minOccurs="0" name="connectionId" type="java.lang.String"/>
+    <field maxOccurs="unbounded" minOccurs="0" name="supportedConnectionIds" type="java.lang.String"/>
+    <structure collectionName="blogs" definition="nabu.cms.blog.crud.blog.types.output" duplicate="id,created,modified" maxOccurs="unbounded" minOccurs="0" name="blogs"/>
+    <structure collectionName="blogPosts" definition="nabu.cms.blog.crud.blogPost.types.output" duplicate="id, created, modified" maxOccurs="unbounded" minOccurs="0" name="posts"/>
+    <structure name="postProperties">
+        <field name="blogId" type="java.lang.String"/>
+        <field name="postId" type="java.lang.String"/>
+        <field name="blogSlug" type="java.lang.String"/>
+        <field name="postName" type="java.lang.String"/>
+    </structure>
+</structure>

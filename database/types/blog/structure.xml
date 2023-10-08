@@ -1,0 +1,3 @@
+<structure collectionName="blogs" duplicate="id,created,modified" name="blog" superType="nabu.cms.core.types.emodel.core.Node">
+    <field comment="Whether or not it is publically available" minOccurs="0" name="publiclyAvailable" type="java.lang.Boolean"/>
+</structure>

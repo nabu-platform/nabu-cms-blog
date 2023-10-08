@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-09-30T09:35:49.932+02:00" lastModified="2023-09-30T09:40:50.350+02:00" leaf="true" version="7">
+<node artifactManager="be.nabu.eai.module.rest.provider.RESTServiceManager" created="2023-09-30T09:35:49.932+02:00" lastModified="2023-10-08T14:08:50.526+02:00" leaf="true" version="10">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
+    <references>nabu.cms.core.services.action.get</references>
+    <references>nabu.cms.core.crud.node.types.output</references>
     <references>nabu.cms.core.crud.node.services.create</references>
     <references>nabu.cms.core.services.user.getCurrent</references>
     <references>nabu.cms.blog.manage.blog.createInput</references>
+    <references>java.lang.String</references>
     <references>nabu.cms.core.services.component.get</references>
+    <references>nabu.utils.String.split</references>
 </node>

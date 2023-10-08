@@ -5,7 +5,9 @@
 	count(*)
 from ~master_data_entries mde
 	join ~node_tags nt on nt.definition_id = mde.id and mde.owner_id = :blogId
-	join ~nodes n on nt.node_id = n.id and n.component_id = (select id from components where name='blogPost') and n.parent_id = :blogId
+	join ~nodes n on nt.node_id = n.id and n.parent_id = :blogId
+	join ~blog_posts bp on bp.id = n.id
 where (:q is null or lower(mde.name) like lower('%' || :q || '%'))
+	and (:publishedBefore is null or (bp.published is not null and bp.published &lt; :publishedBefore))
 group by mde.id, mde.name</sql>
 </jdbcService>
