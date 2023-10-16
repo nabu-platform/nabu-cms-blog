@@ -16,7 +16,7 @@ if (publishedBefore != null)
 	if (size(where) > 0)
 		where = where + " and "
 	where = where + "bp.published <= :published"
-	values = merge(values, structure(key: "published", value: publishedBefore, type: "date"))
+	values = merge(values, structure(key: "published", value: publishedBefore, type: "dateTime"))
 
 @return
 string sql = "select * from " + from
