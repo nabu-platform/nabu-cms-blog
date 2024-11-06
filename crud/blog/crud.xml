@@ -64,6 +64,9 @@
     </filters>
     <getPermission>blog.manage</getPermission>
     <hooks>false</hooks>
+    <listBlacklistFields>path</listBlacklistFields>
+    <listBlacklistFields>version</listBlacklistFields>
+    <listBlacklistFields>componentId</listBlacklistFields>
     <listPermission>blog.manage</listPermission>
     <listRole>$user</listRole>
     <provider>nabu.cms.core.providers.crud.enode.provider</provider>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2023-09-30T09:11:32.435+02:00" lastModified="2023-10-07T09:21:31.307+02:00" leaf="true" version="14">
+<node artifactManager="be.nabu.eai.module.web.component.WebComponentManager" created="2023-09-30T09:11:32.435+02:00" lastModified="2024-09-24T11:01:59.075+02:00" leaf="true" version="15">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
     <locked>false</locked>
     <properties/>
     <references>nabu.cms.blog.crud.blogPost</references>
-    <references>nabu.cms.blog.manage.blog.list</references>
     <references>nabu.cms.blog.manage.blog.create</references>
     <references>nabu.cms.blog.manage.blog.listParents</references>
     <references>nabu.cms.blog.crud.blog</references>
